@@ -6,15 +6,33 @@
 //  Copyright © 2019 Gregor Dschung. All rights reserved.
 //
 
+import os.log
 import UIKit
+import Swinject
+import SomeFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private let assembler = Assembler()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        assembler.apply(assembly: SwinjectDemoAssembly())
+        assembler.apply(assembly: SomeFrameworkAssembly())
+        
+        print("Available through Swinject Container: \(assembler.resolver)")
+        
+        let bla = assembler.resolver.resolve(Bla.self)
+        print("bla: \(bla)")
+        bla?.blub()
+        
+        // This works if Carthage is used, but not if SPM is used
+        let someFrameworkStuff = assembler.resolver.resolve(SomeFrameworkStuff.self)
+        print("someFrameworkStuff: \(someFrameworkStuff)")
+        someFrameworkStuff?.foobar()
+        
         return true
     }
 
