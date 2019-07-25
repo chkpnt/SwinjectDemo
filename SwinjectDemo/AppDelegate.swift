@@ -10,6 +10,7 @@ import os.log
 import UIKit
 import Swinject
 import SomeFramework
+import SomeOtherFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         assembler.apply(assembly: SwinjectDemoAssembly())
         assembler.apply(assembly: SomeFrameworkAssembly())
+        assembler.apply(assembly: SomeOtherFrameworkAssembly())
         
         print("Available through Swinject Container: \(assembler.resolver)")
         
@@ -32,6 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let someFrameworkStuff = assembler.resolver.resolve(SomeFrameworkStuff.self)
         print("someFrameworkStuff: \(someFrameworkStuff)")
         someFrameworkStuff?.foobar()
+        
+        let someOtherFrameworkStuff = assembler.resolver.resolve(SomeOtherFrameworkStuff.self)
+        print("someOtherFrameworkStuff: \(someOtherFrameworkStuff)")
+        someOtherFrameworkStuff?.foobar2()
         
         return true
     }

@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54B6931022E5E9B7002A4F05 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 54B6930F22E5E9B7002A4F05 /* Swinject */; };
+		5491713422E96BE800C13476 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5491713322E96BE800C13476 /* Swinject */; };
+		5491713E22E96C6100C13476 /* SomeOtherFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5491713C22E96C6100C13476 /* SomeOtherFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5491714122E96C6100C13476 /* SomeOtherFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5491713A22E96C6000C13476 /* SomeOtherFramework.framework */; };
+		5491714222E96C6100C13476 /* SomeOtherFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5491713A22E96C6000C13476 /* SomeOtherFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5491714722E96C7800C13476 /* SomeOtherFrameworkStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491714622E96C7800C13476 /* SomeOtherFrameworkStuff.swift */; };
+		5491714922E96CB300C13476 /* SomeOtherFrameworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491714822E96CB300C13476 /* SomeOtherFrameworkAssembly.swift */; };
+		5491714B22E96CF800C13476 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5491714A22E96CF800C13476 /* Swinject */; };
+		5491714D22E96D7300C13476 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5491714C22E96D7300C13476 /* Swinject */; };
 		54B6931A22E5E9E7002A4F05 /* SomeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 54B6931822E5E9E7002A4F05 /* SomeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54B6931D22E5E9E7002A4F05 /* SomeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B6931622E5E9E7002A4F05 /* SomeFramework.framework */; };
 		54B6931E22E5E9E7002A4F05 /* SomeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54B6931622E5E9E7002A4F05 /* SomeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54B6932422E5E9FA002A4F05 /* SomeFrameworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6932322E5E9FA002A4F05 /* SomeFrameworkAssembly.swift */; };
-		54B6932722E5EA17002A4F05 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 54B6932622E5EA17002A4F05 /* Swinject */; };
 		54B6932922E5EAA0002A4F05 /* SomeFrameworkStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6932822E5EAA0002A4F05 /* SomeFrameworkStuff.swift */; };
 		54B6932B22E5EC9C002A4F05 /* SwinjectDemoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6932A22E5EC9C002A4F05 /* SwinjectDemoAssembly.swift */; };
 		54C2DD9422E5DDBF00C8922D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2DD9322E5DDBF00C8922D /* AppDelegate.swift */; };
@@ -24,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5491713F22E96C6100C13476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C2DD8822E5DDBF00C8922D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5491713922E96C6000C13476;
+			remoteInfo = SomeOtherFramework;
+		};
 		54B6931B22E5E9E7002A4F05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54C2DD8822E5DDBF00C8922D /* Project object */;
@@ -40,6 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5491714222E96C6100C13476 /* SomeOtherFramework.framework in Embed Frameworks */,
 				54B6931E22E5E9E7002A4F05 /* SomeFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -48,6 +62,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5491713A22E96C6000C13476 /* SomeOtherFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SomeOtherFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5491713C22E96C6100C13476 /* SomeOtherFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeOtherFramework.h; sourceTree = "<group>"; };
+		5491713D22E96C6100C13476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5491714622E96C7800C13476 /* SomeOtherFrameworkStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeOtherFrameworkStuff.swift; sourceTree = "<group>"; };
+		5491714822E96CB300C13476 /* SomeOtherFrameworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeOtherFrameworkAssembly.swift; sourceTree = "<group>"; };
 		54B6931622E5E9E7002A4F05 /* SomeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SomeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B6931822E5E9E7002A4F05 /* SomeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeFramework.h; sourceTree = "<group>"; };
 		54B6931922E5E9E7002A4F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,11 +84,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5491713722E96C6000C13476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5491714B22E96CF800C13476 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54B6931322E5E9E7002A4F05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B6932722E5EA17002A4F05 /* Swinject in Frameworks */,
+				5491713422E96BE800C13476 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,21 +104,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B6931022E5E9B7002A4F05 /* Swinject in Frameworks */,
+				5491714122E96C6100C13476 /* SomeOtherFramework.framework in Frameworks */,
 				54B6931D22E5E9E7002A4F05 /* SomeFramework.framework in Frameworks */,
+				5491714D22E96D7300C13476 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5491713B22E96C6100C13476 /* SomeOtherFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5491714822E96CB300C13476 /* SomeOtherFrameworkAssembly.swift */,
+				5491714622E96C7800C13476 /* SomeOtherFrameworkStuff.swift */,
+				5491713C22E96C6100C13476 /* SomeOtherFramework.h */,
+				5491713D22E96C6100C13476 /* Info.plist */,
+			);
+			path = SomeOtherFramework;
+			sourceTree = "<group>";
+		};
 		54B6931722E5E9E7002A4F05 /* SomeFramework */ = {
 			isa = PBXGroup;
 			children = (
 				54B6932322E5E9FA002A4F05 /* SomeFrameworkAssembly.swift */,
+				54B6932822E5EAA0002A4F05 /* SomeFrameworkStuff.swift */,
 				54B6931822E5E9E7002A4F05 /* SomeFramework.h */,
 				54B6931922E5E9E7002A4F05 /* Info.plist */,
-				54B6932822E5EAA0002A4F05 /* SomeFrameworkStuff.swift */,
 			);
 			path = SomeFramework;
 			sourceTree = "<group>";
@@ -108,6 +147,7 @@
 			children = (
 				54C2DD9222E5DDBF00C8922D /* SwinjectDemo */,
 				54B6931722E5E9E7002A4F05 /* SomeFramework */,
+				5491713B22E96C6100C13476 /* SomeOtherFramework */,
 				54C2DD9122E5DDBF00C8922D /* Products */,
 				54B6932522E5EA17002A4F05 /* Frameworks */,
 			);
@@ -118,6 +158,7 @@
 			children = (
 				54C2DD9022E5DDBF00C8922D /* SwinjectDemo.app */,
 				54B6931622E5E9E7002A4F05 /* SomeFramework.framework */,
+				5491713A22E96C6000C13476 /* SomeOtherFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +181,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5491713522E96C6000C13476 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5491713E22E96C6100C13476 /* SomeOtherFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54B6931122E5E9E7002A4F05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +200,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5491713922E96C6000C13476 /* SomeOtherFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5491714322E96C6100C13476 /* Build configuration list for PBXNativeTarget "SomeOtherFramework" */;
+			buildPhases = (
+				5491713522E96C6000C13476 /* Headers */,
+				5491713622E96C6000C13476 /* Sources */,
+				5491713722E96C6000C13476 /* Frameworks */,
+				5491713822E96C6000C13476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SomeOtherFramework;
+			packageProductDependencies = (
+				5491714A22E96CF800C13476 /* Swinject */,
+			);
+			productName = SomeOtherFramework;
+			productReference = 5491713A22E96C6000C13476 /* SomeOtherFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		54B6931522E5E9E7002A4F05 /* SomeFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54B6931F22E5E9E7002A4F05 /* Build configuration list for PBXNativeTarget "SomeFramework" */;
@@ -166,7 +236,7 @@
 			);
 			name = SomeFramework;
 			packageProductDependencies = (
-				54B6932622E5EA17002A4F05 /* Swinject */,
+				5491713322E96BE800C13476 /* Swinject */,
 			);
 			productName = SomeFramework;
 			productReference = 54B6931622E5E9E7002A4F05 /* SomeFramework.framework */;
@@ -185,10 +255,11 @@
 			);
 			dependencies = (
 				54B6931C22E5E9E7002A4F05 /* PBXTargetDependency */,
+				5491714022E96C6100C13476 /* PBXTargetDependency */,
 			);
 			name = SwinjectDemo;
 			packageProductDependencies = (
-				54B6930F22E5E9B7002A4F05 /* Swinject */,
+				5491714C22E96D7300C13476 /* Swinject */,
 			);
 			productName = SwinjectDemo;
 			productReference = 54C2DD9022E5DDBF00C8922D /* SwinjectDemo.app */;
@@ -204,6 +275,10 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Gregor Dschung";
 				TargetAttributes = {
+					5491713922E96C6000C13476 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
 					54B6931522E5E9E7002A4F05 = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
@@ -231,11 +306,19 @@
 			targets = (
 				54C2DD8F22E5DDBF00C8922D /* SwinjectDemo */,
 				54B6931522E5E9E7002A4F05 /* SomeFramework */,
+				5491713922E96C6000C13476 /* SomeOtherFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5491713822E96C6000C13476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54B6931422E5E9E7002A4F05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +339,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5491713622E96C6000C13476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5491714922E96CB300C13476 /* SomeOtherFrameworkAssembly.swift in Sources */,
+				5491714722E96C7800C13476 /* SomeOtherFrameworkStuff.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54B6931222E5E9E7002A4F05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +371,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5491714022E96C6100C13476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5491713922E96C6000C13476 /* SomeOtherFramework */;
+			targetProxy = 5491713F22E96C6100C13476 /* PBXContainerItemProxy */;
+		};
 		54B6931C22E5E9E7002A4F05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 54B6931522E5E9E7002A4F05 /* SomeFramework */;
@@ -306,6 +403,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5491714422E96C6100C13476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SomeOtherFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.SomeOtherFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5491714522E96C6100C13476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SomeOtherFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.SomeOtherFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		54B6932022E5E9E7002A4F05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -518,6 +672,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5491714322E96C6100C13476 /* Build configuration list for PBXNativeTarget "SomeOtherFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5491714422E96C6100C13476 /* Debug */,
+				5491714522E96C6100C13476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54B6931F22E5E9E7002A4F05 /* Build configuration list for PBXNativeTarget "SomeFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -559,12 +722,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		54B6930F22E5E9B7002A4F05 /* Swinject */ = {
+		5491713322E96BE800C13476 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 54B6930E22E5E9B7002A4F05 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
 		};
-		54B6932622E5EA17002A4F05 /* Swinject */ = {
+		5491714A22E96CF800C13476 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54B6930E22E5E9B7002A4F05 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		5491714C22E96D7300C13476 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 54B6930E22E5E9B7002A4F05 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
